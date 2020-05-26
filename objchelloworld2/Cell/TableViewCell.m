@@ -19,7 +19,7 @@
 }
 
 //установить контент
-- (void) setContentWithText:(NSString*)text {
+- (void)setContentWithText:(NSString*)text {
     self.cellLabel.text = text;
 }
 

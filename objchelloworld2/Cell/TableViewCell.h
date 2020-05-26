@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *cellLabel;
 
 //установить контент
-- (void) setContentWithText:(NSString*)text;
+- (void)setContentWithText:(NSString*)text;
 
 @end
 
