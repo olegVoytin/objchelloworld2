@@ -14,6 +14,8 @@
 		844087F8247D624D004A2E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844087F7247D624D004A2E50 /* Assets.xcassets */; };
 		844087FB247D624D004A2E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844087F9247D624D004A2E50 /* LaunchScreen.storyboard */; };
 		844087FE247D624E004A2E50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844087FD247D624E004A2E50 /* main.m */; };
+		84408810247D6A42004A2E50 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440880E247D6A42004A2E50 /* TableViewCell.m */; };
+		84408811247D6A42004A2E50 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8440880F247D6A42004A2E50 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		844087FA247D624D004A2E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844087FC247D624E004A2E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844087FD247D624E004A2E50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8440880D247D6A42004A2E50 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		8440880E247D6A42004A2E50 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		8440880F247D6A42004A2E50 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +66,12 @@
 		844087EA247D6247004A2E50 /* objchelloworld2 */ = {
 			isa = PBXGroup;
 			children = (
+				84408804247D68B0004A2E50 /* ViewController */,
+				84408805247D68C6004A2E50 /* Cell */,
 				844087EB247D6247004A2E50 /* AppDelegate.h */,
 				844087EC247D6247004A2E50 /* AppDelegate.m */,
 				844087EE247D6247004A2E50 /* SceneDelegate.h */,
 				844087EF247D6247004A2E50 /* SceneDelegate.m */,
-				844087F1247D6247004A2E50 /* ViewController.h */,
-				844087F2247D6247004A2E50 /* ViewController.m */,
 				844087F4247D6247004A2E50 /* Main.storyboard */,
 				844087F7247D624D004A2E50 /* Assets.xcassets */,
 				844087F9247D624D004A2E50 /* LaunchScreen.storyboard */,
@@ -74,6 +79,25 @@
 				844087FD247D624E004A2E50 /* main.m */,
 			);
 			path = objchelloworld2;
+			sourceTree = "<group>";
+		};
+		84408804247D68B0004A2E50 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				844087F1247D6247004A2E50 /* ViewController.h */,
+				844087F2247D6247004A2E50 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84408805247D68C6004A2E50 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8440880D247D6A42004A2E50 /* TableViewCell.h */,
+				8440880E247D6A42004A2E50 /* TableViewCell.m */,
+				8440880F247D6A42004A2E50 /* TableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				844087FB247D624D004A2E50 /* LaunchScreen.storyboard in Resources */,
+				84408811247D6A42004A2E50 /* TableViewCell.xib in Resources */,
 				844087F8247D624D004A2E50 /* Assets.xcassets in Resources */,
 				844087F6247D6247004A2E50 /* Main.storyboard in Resources */,
 			);
@@ -149,6 +174,7 @@
 				844087F3247D6247004A2E50 /* ViewController.m in Sources */,
 				844087ED247D6247004A2E50 /* AppDelegate.m in Sources */,
 				844087FE247D624E004A2E50 /* main.m in Sources */,
+				84408810247D6A42004A2E50 /* TableViewCell.m in Sources */,
 				844087F0247D6247004A2E50 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
