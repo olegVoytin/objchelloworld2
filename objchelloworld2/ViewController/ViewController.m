@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TableViewCell.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UITableView *mainTable;
@@ -48,7 +49,10 @@
 
 //формирование ячейки по индексу
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [[UITableViewCell alloc] init];
+    TableViewCell *cell = [[TableViewCell alloc] init];
+    NSString *text = [[NSString alloc] initWithFormat:@"12"];
+    [cell setContentWithText:text];
+    return cell;
 }
 
 #pragma mark - Делегат

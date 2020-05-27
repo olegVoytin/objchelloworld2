@@ -18,9 +18,19 @@
     [super setSelected:selected animated:animated];
 }
 
+//создать лейбл
+- (void)createLabel {
+    self.label = [[UILabel alloc] init];
+    [self.contentView addSubview:self.label];
+    self.label.translatesAutoresizingMaskIntoConstraints = false;
+    [self.label.centerYAnchor constraintEqualToAnchor:self.contentView.centerYAnchor].active = true;
+    [self.label.centerXAnchor constraintEqualToAnchor:self.contentView.centerXAnchor].active = true;
+}
+
 //установить контент
 - (void)setContentWithText:(NSString*)text {
-    self.cellLabel.text = text;
+    [self createLabel];
+    self.label.text = text;
 }
 
 @end
